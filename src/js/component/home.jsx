@@ -1,25 +1,31 @@
-import React from "react";
-
+import React from "react"
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
-
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 //create your first component
 const Home = () => {
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
+		<>
+		<Navbar expand="lg" variant="dark" bg="dark">
+		<Container>
+		  <Navbar.Brand href="#">star wars </Navbar.Brand>
+		  <button className='glowing-btn'><span className='glowing-txt'>FA<span className='faulty-letter'>VOR</span>ITES</span></button>
+		</Container>
+	  </Navbar>
+	    <Container>
+		<Row>
+		  <Col sm>sm=true</Col>
+		  <Col sm>sm=true</Col>
+		  <Col sm>sm=true</Col>
+		</Row>
+	  </Container>
+	  </>
+		
+		
 	);
 };
 
