@@ -1,3 +1,6 @@
+# About this project:
+Neon flashing light button.
+
 # Hello World with React boilerplate
 
 Start coding a react application
